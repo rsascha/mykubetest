@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-        - name: nginx
-          image: nginx:latest
+        - name: mynginx
+          image: localhost:32000/mynginx:latest
           ports:
             - containerPort: 80
