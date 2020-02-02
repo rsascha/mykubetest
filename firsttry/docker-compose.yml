@@ -4,3 +4,8 @@ services:
     build: .
     ports:
       - "8080:80"
+
+  keycloak:
+    image: jboss/keycloak
+    ports:
+      - "8081:8080"
