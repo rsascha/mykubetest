@@ -21,6 +21,7 @@ cd my-fullstack-app
 ### Build the application
 
 ```bash
+npm install
 npm run build
 ```
 
