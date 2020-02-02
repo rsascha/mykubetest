@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mykubetest
+  labels:
+    app: mykubetest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mykubetest
+  template:
+    metadata:
+      labels:
+        app: mykubetest
+    spec:
+      containers:
+        - name: mykubetest
+          image: localhost:32000/mykubetest:latest
+          ports:
+            - containerPort: 80
