@@ -109,3 +109,21 @@ replicaset.apps/api-7cf9778dd6         3         3         3       117m
 replicaset.apps/mykubetest-fd678dc59   3         3         3       101m
 
 ```
+
+## Development
+
+### IDE
+
+I'm using [Visual Studio Code](https://code.visualstudio.com/download).
+
+### Source Control Management
+
+I'm using git-flow.
+
+Check out:
+
+https://danielkummer.github.io/git-flow-cheatsheet/index.de_DE.html
+
+```bash
+apt-get install git-flow
+```
