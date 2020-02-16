@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mykubetest
+  name: mykubetest-deployment
   labels:
     app: mykubetest
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: mykubetest
-          image: localhost:32000/mykubetest:latest
+          image: localhost:32000/mykubetest
           ports:
             - containerPort: 80
