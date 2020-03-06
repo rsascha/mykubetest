@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-deployment
+  name: api
   labels:
     app: api
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: api
-          image: localhost:32000/api:0.0.5
+          image: localhost:32000/api:0.0.14
           ports:
             - containerPort: 80
