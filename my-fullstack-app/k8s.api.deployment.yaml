@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
         - name: api
-          image: localhost:32000/api:0.0.14
+          image: localhost:32000/api:0.0.19
           ports:
             - containerPort: 80
+      imagePullSecrets:
+        - name: regcred

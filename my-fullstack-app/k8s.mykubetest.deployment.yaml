@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mykubetest
-          image: localhost:32000/mykubetest
+          image: localhost:32000/mykubetest:0.0.19
           ports:
             - containerPort: 80
       imagePullSecrets:
