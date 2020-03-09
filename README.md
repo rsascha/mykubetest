@@ -73,6 +73,23 @@ microk8s.kubectl apply -f k8s.mykubetest.service.yaml
 microk8s.kubectl apply -f k8s.ingress.yaml
 ```
 
+### For this feature branch check my Twitch streams
+
+https://www.twitch.tv/gp4791
+
+Current problem:
+
+The pull was only working for the first time. After that, I get:
+
+```
+Warning  Failed     23s (x3 over 62s)  kubelet, x1        Failed to pull image "api:0.0.21": rpc error: code = Unknown desc = failed to resolve image "docker.io/library/api:0.0.21": no available registry endpoint: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+```
+
+Kubernetes is trying to load the images from docker.io, instead from the
+local registry at localhost:32000.
+
+Work in progress ...
+
 ### Open browser
 
 https://localhost/
