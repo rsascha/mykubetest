@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: localhost:32000/api:0.0.42
+          image: localhost:32000/api:0.0.44
           ports:
             - containerPort: 80
       serviceAccountName: build-robot
