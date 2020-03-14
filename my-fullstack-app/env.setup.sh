@@ -27,3 +27,9 @@ microk8s.kubectl apply -f k8s.api.service.yaml
 
 echo "microk8s.kubectl apply -f k8s.mykubetest.service.yaml"
 microk8s.kubectl apply -f k8s.mykubetest.service.yaml
+
+echo "microk8s.kubectl apply -f k8s.api.deployment.yaml"
+microk8s.kubectl apply -f k8s.api.deployment.yaml
+
+echo "microk8s.kubectl apply -f k8s.mykubetest.deployment.yaml"
+microk8s.kubectl apply -f k8s.mykubetest.deployment.yaml

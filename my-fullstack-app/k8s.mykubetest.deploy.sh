@@ -10,8 +10,8 @@ VERSION=$1
 echo "sed -i 's/mykubetest:.*/mykubetest:'$VERSION'/g' k8s.mykubetest.deployment.yaml"
 sed -i 's/mykubetest:.*/mykubetest:'$VERSION'/g' k8s.mykubetest.deployment.yaml
 
-echo "microk8s.kubectl set image deployment/mykubetest mykubetest=mykubetest:$VERSION --record"
-microk8s.kubectl set image deployment/mykubetest mykubetest=mykubetest:$VERSION --record
+echo "microk8s.kubectl set image deployment/mykubetest mykubetest=mykubetest:$VERSION --record --namespace=myspace"
+microk8s.kubectl set image deployment/mykubetest mykubetest=mykubetest:$VERSION --record --namespace=myspace
 
 if [ $? -ne 0 ]; then
     echo "microk8s.kubectl apply -f k8s.mykubetest.deployment.yaml"

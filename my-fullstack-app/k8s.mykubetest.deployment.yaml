@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mykubetest
+  namespace: myspace
   labels:
     app: mykubetest
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
         - name: mykubetest
-          image: localhost:32000/mykubetest:0.0.39
+          image: localhost:32000/mykubetest:0.0.42
           ports:
             - containerPort: 80
       serviceAccountName: build-robot
