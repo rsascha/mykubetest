@@ -16,8 +16,9 @@ spec:
     spec:
       containers:
         - name: api
-          image: localhost:32000/api:0.0.26
+          image: localhost:32000/api:0.0.38
           ports:
             - containerPort: 80
+      serviceAccountName: build-robot
       imagePullSecrets:
-        - name: regcred
+        - name: myregistry

@@ -12,9 +12,3 @@ docker build --tag localhost:32000/mykubetest:$VERSION -f k8s.mykubetest.Dockerf
 
 echo "docker push localhost:32000/mykubetest:$VERSION"
 docker push localhost:32000/mykubetest:$VERSION
-
-echo "docker tag localhost:32000/mykubetest:$VERSION localhost:32000/mykubetest:latest"
-docker tag localhost:32000/mykubetest:$VERSION localhost:32000/mykubetest:latest
-
-echo "docker push localhost:32000/mykubetest:latest"
-docker push localhost:32000/mykubetest:latest
